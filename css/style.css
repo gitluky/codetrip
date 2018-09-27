@@ -7,11 +7,33 @@ a {
 	text-decoration: none;
 }
 
+@media screen and (min-width: 1080px) {
+
+    body {
+        background-color: #eee;
+        margin: 0 auto;
+        width: 100%;    
+    }
+}
+
+
+.white-background {
+    position: absolute;
+    background-color: #fff;
+    left: 10%;
+    width: 80%;
+    box-shadow: 0 3px 10px #bbb;
+}
+
 iframe {
-	display: block;
-	margin: 0 auto;
-	width: 640px;
-	height: 480px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 75%
+}
+#id {
+    display:block;
+    top: 0;
 }
 
 /*////WRAPPER////*/
@@ -24,10 +46,13 @@ iframe {
 	min-width: 480px;  
 }
 
-header {
-    position: absolute;
-    top: 0px;
+.wrapper2{
+    display: block;
+	margin: 0 auto;
+	width: 70%;
+	min-width: 480px;  
 }
+
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -39,13 +64,6 @@ header {
 
 
 /*////HEADER////*/
-
-.fixed-pos {
-    position: fixed;
-    left: 0;
-    right: 0;
-    background-color: white;
-}
 
 h1 {
 	text-align: center;
@@ -68,17 +86,7 @@ h3 {
 
 hgroup{
 	margin: 10px auto 0;
-	border-bottom: 1px solid #ccc;
-}
 
-
-
-#banner {
-	margin: 120px auto 0;
-	display: block;
-	width: 100%;
-	padding-bottom: 1%;
-	border-bottom: 1px solid #ccc;
 }
 
 /*////SITE NAVIGATION////*/
@@ -86,8 +94,7 @@ hgroup{
 #site-nav {
 	text-align: center;
 	padding: 4px 0;
-	margin-bottom: 6px;
-	border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
 
 }
 
@@ -110,6 +117,15 @@ hgroup{
 
 /*////WELCOME MESSAGE////*/
 
+
+#banner {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	padding-bottom: 1%;
+	border-bottom: 1px solid #ccc;
+}
+
 #welcome {
 	font: normal 1em/1em Calibri;
 	margin: 1% auto;
@@ -131,6 +147,10 @@ hgroup{
 
 img {
 	width: 100%;
+}
+
+.shadow {
+    box-shadow: 0 2px 4px #ccc;
 }
 
 /*////SOCIAL////*/
